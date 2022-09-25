@@ -13,6 +13,10 @@ h5,
 h6 {
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -117,6 +121,8 @@ h6 {
 }
 
 .header-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,10 +135,11 @@ h6 {
 .header-contact:focus {
   color: var(--color-blue);
 }
-
+.nav-list {
+  margin-left: 93px;
+}
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .item {
   margin-right: 50px;
@@ -174,7 +181,7 @@ h6 {
   text-transform: uppercase;
   color: var(--color-white);
   max-width: 700px;
-  display: inline-block;
+  margin: 0 auto;
   margin-bottom: var(--card-set-gap);
 }
 
@@ -193,7 +200,6 @@ h6 {
   border-color: transparent;
   padding: 10px 32px;
   margin: 0 auto;
-  display: block;
 }
 .hero-btn:active,
 .hero-btn:hover,
@@ -203,9 +209,6 @@ h6 {
   border-radius: 4px;
 }
 
-.benefits {
-  padding-top: 94px;
-}
 .benefits-list {
   display: flex;
 }
@@ -283,7 +286,7 @@ h6 {
 }
 
 .team-skills {
-  margin: var(--card-set-gap) 61px;
+  padding: var(--card-set-gap) 10px;
 }
 .team-name {
   margin-bottom: 10px;
@@ -408,7 +411,6 @@ h6 {
 }
 
 .portfolio-item {
-  border: 1px solid #eeeeee;
   width: 370px;
   height: 404px;
   flex-basis: calc(100% / 3 - 30px);
@@ -425,6 +427,12 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--color-grey);
 }
+.portfolio-content {
+  display: block;
+}
 .text-list {
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
